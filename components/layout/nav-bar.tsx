@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { LazyMotion, domAnimation, m, AnimatePresence } from "framer-motion";
-
+import ThemeToggle from "./theme-switch";
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
@@ -31,30 +31,36 @@ export default function Navbar() {
               </span>
             </Link>
 
-            {/* Desktop navigation */}
-            <nav className="hidden items-center gap-8 md:flex">
-              {navItems.map((item) => (
-                <Link
-                  key={item.name}
-                  href={item.href}
-                  className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
-                >
-                  {item.name}
-                </Link>
-              ))}
-            </nav>
+            {/* Desktop nav + ThemeSwitch */}
+            <div className="hidden items-center gap-6 md:flex">
+              <nav className="flex items-center gap-8">
+                {navItems.map((item) => (
+                  <Link
+                    key={item.name}
+                    href={item.href}
+                    className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
+                  >
+                    {item.name}
+                  </Link>
+                ))}
+              </nav>
+              <ThemeToggle />
+            </div>
 
-            {/* Mobile menu button */}
-            <button
-              onClick={() => setMobileOpen(!mobileOpen)}
-              className="rounded-md p-2 text-foreground/80 hover:bg-accent/50 md:hidden"
-              aria-label="Toggle menu"
-            >
-              {mobileOpen ? <X size={24} /> : <Menu size={24} />}
-            </button>
+            {/* Mobile top bar: ThemeSwitch + Hamburger */}
+            <div className="flex items-center gap-4 md:hidden">
+              <ThemeToggle /> {/* First-class on mobile */}
+              <button
+                onClick={() => setMobileOpen(!mobileOpen)}
+                className="rounded-md p-2 text-foreground/80 hover:bg-accent/50"
+                aria-label="Toggle menu"
+              >
+                {mobileOpen ? <X size={24} /> : <Menu size={24} />}
+              </button>
+            </div>
           </div>
 
-          {/* Mobile navigation animated */}
+          {/* Mobile dropdown nav */}
           <AnimatePresence mode="wait">
             {mobileOpen && (
               <m.nav

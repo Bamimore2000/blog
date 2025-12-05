@@ -18,7 +18,7 @@ export default function Hero() {
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-background/10" />
       </div>
 
-      <div className="relative mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:py-40">
+      <div className="relative bg-red-500 mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:py-40">
         <div className="max-w-3xl">
           <h1 className="text-5xl font-bold tracking-tight text-white sm:text-6xl lg:text-7xl">
             Statecraft

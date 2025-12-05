@@ -20,6 +20,11 @@ export interface BlogCardProps {
   slug: string;
   image?: string;
   content: string
+  author: {
+    name: string,
+    image: string,
+    id: string
+  }
 }
 
 export default function BlogCard({

@@ -1,10 +1,8 @@
 import { blogPosts } from "@/app/mockdata/blog-data";
 import Image from "next/image";
 import { notFound } from "next/navigation";
-import { ViewTransition } from "react";
 
 export default async function BlogPostPage({ params }: { params: { slug: string } }) {
-  // Await params (Next 16 pattern)
   const { slug } = await Promise.resolve(params);
 
   // Find the blog post
@@ -40,10 +38,24 @@ export default async function BlogPostPage({ params }: { params: { slug: string 
       <div className="w-16 h-[2px] bg-primary mt-3 mb-6"></div>
   
       {/* Meta */}
-      <div className="text-sm text-muted-foreground flex gap-3 mb-8">
+      <div className="text-sm text-muted-foreground flex gap-3 mb-2 items-center">
         <span>{post.date}</span>
         <span>•</span>
         <span>{post.readTime}</span>
+      </div>
+
+      {/* Author */}
+      <div className="flex items-center gap-3 mb-8">
+        <Image
+          src={post.author.image}
+          alt={post.author.name}
+          width={40}
+          height={40}
+          className="rounded-full object-cover"
+        />
+        <span className="text-sm font-medium text-muted-foreground">
+          {post.author.name}
+        </span>
       </div>
   
       {/* Tags */}
@@ -70,5 +82,4 @@ export default async function BlogPostPage({ params }: { params: { slug: string 
       />
     </article>
   );
-  
 }

@@ -19,9 +19,9 @@ export default function FeaturedArticle({ post }: { post: BlogCardProps }) {
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
         </div>
 
-        <div className="relative mx-auto max-w-7xl px-6 pb-16 pt-12 lg:pb-24">
+        <div className="relative mx-auto max-w-7xl px-2 pb-16 pt-12 lg:pb-24">
           <div className="max-w-4xl">
-            <div className="mb-6 flex items-center gap-6 text-white/80">
+            <div className="mb-6 flex items-center gap-6 ">
               <div className="flex items-center gap-2">
                 <Calendar className="h-4 w-4" />
                 <time>{post.date}</time>
@@ -32,15 +32,15 @@ export default function FeaturedArticle({ post }: { post: BlogCardProps }) {
               </div>
             </div>
 
-            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
+            <h1 className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
               {post.title}
             </h1>
 
-            <p className="mt-6 text-xl leading-relaxed text-white/90 lg:text-2xl">
+            <p className="mt-6 text-xl leading-relaxed  lg:text-2xl">
               {post.description}
             </p>
 
-            <p className="mt-8 inline-flex items-center text-lg font-medium text-white hover:underline">
+            <p className="mt-8 inline-flex items-center text-lg font-medium  hover:underline">
               Read the full article <span className="ml-2">→</span>
             </p>
           </div>

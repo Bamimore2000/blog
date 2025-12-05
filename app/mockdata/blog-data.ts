@@ -15,6 +15,11 @@ export const blogPosts: BlogCardProps[] = [
       <p>Stable elite agreements often precede inclusive institutions by decades (Britain, Botswana, South Korea).</p>
       <p>Forcing inclusion too early can fracture the minimal coalition needed for basic order.</p>
     `,
+    author: {
+      name: "Dr. Sarah Kimani",
+      image: "https://randomuser.me/api/portraits/women/65.jpg",
+      id: "author-003",
+    },
   },
   {
     title: "Measuring State Capacity in Real Time: New Indices for 2025",
@@ -29,6 +34,11 @@ export const blogPosts: BlogCardProps[] = [
       <p>Night lights, tax compliance scraped from mobile payments, and civil registration coverage now update monthly.</p>
       <p>These tools transform both academic research and policy timing in fragile environments.</p>
     `,
+    author: {
+      name: "Dr. Sarah Kimani",
+      image: "https://randomuser.me/api/portraits/women/65.jpg",
+      id: "author-003",
+    },
   },
   {
     title: "From Failed State to Middle-Income in One Generation: The Rwanda Paradox",
@@ -43,6 +53,11 @@ export const blogPosts: BlogCardProps[] = [
       <p>Rwanda combined extreme central control with performance-based legitimacy and massive investment in bureaucratic capability.</p>
       <p>The result is one of the fastest state-building episodes in modern history — at the cost of political competition.</p>
     `,
+    author: {
+      name: "Dr. Sarah Kimani",
+      image: "https://randomuser.me/api/portraits/women/65.jpg",
+      id: "author-003",
+    },
   },
   {
     title: "Institution-Building in Post-Conflict States: Lessons from 1945–2025",
@@ -57,6 +72,11 @@ export const blogPosts: BlogCardProps[] = [
       <p>From Germany and Japan in 1945 to Afghanistan and Iraq two decades ago, external and domestic actors have attempted to build functioning states on the ruins of war.</p>
       <p>This long-form essay examines which institutional designs endured, why fiscal contracts mattered more than constitutions, and how elite settlements — not elections — determined success.</p>
     `,
+    author: {
+      name: "Dr. Sarah Kimani",
+      image: "https://randomuser.me/api/portraits/women/65.jpg",
+      id: "author-003",
+    },
   },
   {
     title: "The Fiscal Foundations of Durable States: Evidence from 1800–2025",
@@ -71,6 +91,11 @@ export const blogPosts: BlogCardProps[] = [
       <p>States that successfully shifted from indirect to broad-based direct taxation between 1850 and 1920 still dominate global rankings of governance quality today.</p>
       <p>Using new historical revenue data, we trace the causal pathways from fiscal innovation to administrative capacity and political stability.</p>
     `,
+    author: {
+      name: "Dr. Sarah Kimani",
+      image: "https://randomuser.me/api/portraits/women/65.jpg",
+      id: "author-003",
+    },
   },
   {
     title: "Why Decentralisation Fails in Fragile States (And How to Make It Work)",
@@ -85,6 +110,11 @@ export const blogPosts: BlogCardProps[] = [
       <p>Premature fiscal and political decentralisation without central extractive capacity creates perverse incentives for local predation.</p>
       <p>Case studies from Somalia, Myanmar, and DR Congo show when — and how — sequenced decentralisation can instead reinforce state cohesion.</p>
     `,
+    author: {
+      name: "Dr. Sarah Kimani",
+      image: "https://randomuser.me/api/portraits/women/65.jpg",
+      id: "author-003",
+    },
   },
   {
     title: "State-Making at the Periphery: Borders, Identity, and Coercion in the 21st Century",
@@ -99,6 +129,11 @@ export const blogPosts: BlogCardProps[] = [
       <p>From India’s Aadhaar to Ethiopia’s kebele system, modern states extend legibility and control through digital registration rather than conscription and cadastral surveys.</p>
       <p>This shift changes both the technology and the politics of state penetration.</p>
     `,
+    author: {
+      name: "Dr. Sarah Kimani",
+      image: "https://randomuser.me/api/portraits/women/65.jpg",
+      id: "author-003",
+    },
   },
   {
     title: "The Return of Industrial Policy: State-Led Development After Neoliberalism",
@@ -113,6 +148,11 @@ export const blogPosts: BlogCardProps[] = [
       <p>Effective industrial policy requires embedded autonomy, performance legitimacy, and reciprocal control mechanisms.</p>
       <p>Contemporary cases show these classic insights remain relevant — if adapted to global value chains and democratic scrutiny.</p>
     `,
+    author: {
+      name: "Dr. Sarah Kimani",
+      image: "https://randomuser.me/api/portraits/women/65.jpg",
+      id: "author-003",
+    },
   },
   {
     title: "Security Sector Reform That Actually Works: Evidence from 30 Cases",
@@ -126,6 +166,11 @@ export const blogPosts: BlogCardProps[] = [
     content: `
       <p>Successful reform requires unified political authority, external conditionality tied to domestic coalitions, and gradual integration rather than rapid demobilisation.</p>
     `,
+    author: {
+      name: "Dr. Sarah Kimani",
+      image: "https://randomuser.me/api/portraits/women/65.jpg",
+      id: "author-003",
+    },
   },
   {
     title: "Digital Infrastructure as State-Building: The Case of Estonia and Beyond",
@@ -140,6 +185,11 @@ export const blogPosts: BlogCardProps[] = [
       <p>Estonia’s X-Road, digital ID card, and e-residency programme created trust in public institutions where almost none existed in 1991.</p>
       <p>The model is now being adapted in fragile and developing states with surprising results.</p>
     `,
+    author: {
+      name: "Dr. Sarah Kimani",
+      image: "https://randomuser.me/api/portraits/women/65.jpg",
+      id: "author-003",
+    },
   },
  
 ];

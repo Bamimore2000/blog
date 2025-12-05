@@ -136,3 +136,52 @@ code, pre {
     @apply bg-background text-foreground;
   }
 }
+
+
+.ProseMirror h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 2rem 0 1rem;
+}
+.ProseMirror h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 2rem 0 0.5rem;
+}
+.ProseMirror h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 1.5rem 0 0.5rem;
+}
+.ProseMirror p {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+.ProseMirror blockquote {
+  border-left: 4px solid #333;
+  padding-left: 1.5rem;
+  margin: 1.5rem 0;
+  font-style: italic;
+  color: #555;
+}
+.ProseMirror a {
+  color: #0066cc;
+  text-decoration: underline;
+}
+.ProseMirror p.is-editor-empty:first-child::before {
+  content: attr(data-placeholder);
+  float: left;
+  color: #94a3b8;
+  pointer-events: none;
+  height: 0;
+}
+.ProseMirror ::selection {
+  background-color: #3b82f6;
+  color: white;
+}
+.ProseMirror ::-moz-selection {
+  background-color: #3b82f6;
+  color: white;
+}

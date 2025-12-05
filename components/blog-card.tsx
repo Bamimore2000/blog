@@ -33,7 +33,7 @@ export default function BlogCard({
 }: BlogCardProps) {
   return (
     <Link href={`/blog/${slug}`} className="block group">
-      <Card className="h-full flex flex-col overflow-hidden border shadow-sm hover:shadow-xl transition-shadow duration-300 rounded-xl">
+      <Card className="h-full pt-0 flex flex-col overflow-hidden border shadow-sm hover:shadow-xl transition-shadow duration-300 rounded-xl">
         {/* Image */}
         <div className="relative aspect-16/10 overflow-hidden bg-muted">
           <Image

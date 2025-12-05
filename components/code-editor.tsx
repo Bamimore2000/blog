@@ -88,7 +88,7 @@ export default function MediumEditor() {
     content: `<h1>Your Story Title</h1><p>Start writing...</p>`,
     editorProps: {
       attributes: {
-        class: "prose prose-lg max-w-none focus:outline-none min-h-screen px-8 py-12",
+        class: "prose prose-lg max-w-none focus:outline-none px-8 py-12",
       },
       handleDrop: (view, event, slice, moved) => {
         if (!moved && event.dataTransfer && event.dataTransfer.files && event.dataTransfer.files[0]) {
@@ -265,24 +265,40 @@ export default function MediumEditor() {
   const stats = editor.storage.characterCount || { characters: () => 0, words: () => 0 };
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className=" bg-background">
       {/* Header */}
-      <header className="border-b sticky top-0 bg-background z-40">
-        <div className="max-w-3xl mx-auto px-6 py-4 flex items-center justify-between">
-          <h1 className="text-2xl font-bold">Draft in StateCraft</h1>
-          <div className="flex items-center gap-3">
-            <span className="text-sm text-gray-500">
-              {saveStatus === "saving" && "Saving..."}
-              {saveStatus === "saved" && lastSaved && `Saved ${formatTimeAgo(lastSaved)}`}
-              {saveStatus === "unsaved" && "Unsaved changes"}
-            </span>
-            <Button variant="ghost" size="sm" onClick={() => autoSave(editor.getHTML())}>
-              Save draft
-            </Button>
-            <Button className="bg-green-600 hover:bg-green-700">Publish</Button>
-          </div>
-        </div>
-      </header>
+      <header className="border-b sticky top-[50px] bg-background z-40">
+  <div className="max-w-3xl mx-auto px-4 sm:px-6 py-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-0">
+    {/* Title */}
+    <h1 className="text-xl sm:text-2xl font-bold">Draft in StateCraft</h1>
+
+    {/* Actions */}
+    <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-3 w-full sm:w-auto">
+      {/* Save status */}
+      <span className="text-sm text-gray-500">
+        {saveStatus === "saving" && "Saving..."}
+        {saveStatus === "saved" && lastSaved && `Saved ${formatTimeAgo(lastSaved)}`}
+        {saveStatus === "unsaved" && "Unsaved changes"}
+      </span>
+
+      {/* Buttons */}
+      <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 w-full sm:w-auto">
+        <Button
+          variant="ghost"
+          size="sm"
+          className="w-full sm:w-auto"
+          onClick={() => autoSave(editor.getHTML())}
+        >
+          Save draft
+        </Button>
+        <Button className="bg-green-600 hover:bg-green-700 w-full sm:w-auto">
+          Publish
+        </Button>
+      </div>
+    </div>
+  </div>
+</header>
+
 
       {/* Editor */}
       <div className="max-w-3xl mx-auto relative">

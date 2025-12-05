@@ -28,7 +28,7 @@ export default async function BlogPostPage({ params }: { params: { slug: string 
   
       {/* Optional caption */}
       <p className="text-xs text-muted-foreground mt-2 italic">
-        {post.imageCaption ?? "Field perspectives on state-building across African regions."}
+        { "Field perspectives on state-building across African regions."}
       </p>
   
       {/* Title */}
